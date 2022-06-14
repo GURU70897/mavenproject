@@ -34,6 +34,6 @@ jobs:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: a2278987b72e94a86526c104a54dc340fdcc2d1f
-          SONAR_HOST_URL: http://52.55.188.136:9000/
+          SONAR_TOKEN: 775ac3cfa73803e2ccb8dd593b6aba94de6de18e
+          SONAR_HOST_URL: http://192.168.244.105:9000/
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Bhavi
