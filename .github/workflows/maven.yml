@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: e7bd2edbd451833d38eaf29602d0eb58aaaa5690
-          SONAR_HOST_URL: https://82c8-2405-204-519a-90b8-7183-75c6-a97f-71bd.in.ngrok.io 
+          SONAR_HOST_URL: https://454a-2405-204-519a-90b8-7183-75c6-a97f-71bd.in.ngrok.io
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Bhavi
 
 
